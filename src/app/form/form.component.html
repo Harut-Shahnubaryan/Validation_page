@@ -1,0 +1,43 @@
+<form name="message" method="post" class="form-cont">
+  <div class="form">
+
+    <div class="block">
+      <div class="input-cont">
+        <span
+          [ngClass]="['dots', active ? 'active' : '']"
+        ></span>
+        <div class="group">
+          <label for="name">Name</label>
+          <input class="input" id="name" type="text" value="" name="name" (change)="onChange($event)">
+        </div>
+      </div>
+
+      <div class="input-cont">
+        <span class="dots"></span>
+        <div class="group">
+          <label for="email">Email</label>
+          <input class="input" id="email" type="text" value="" name="email">
+        </div>
+      </div>
+
+      <div class="input-cont">
+        <span class="dots"></span>
+        <div class="group">
+          <label for="pass">password</label>
+          <input class="input" type="password" value="" name="pass">
+        </div>
+      </div>
+
+      <div class="input-cont">
+        <span class="dots"></span>
+        <div class="group">
+          <label for="conf-pass">confirm password</label>
+          <input class="input" type="password" value="" name="conf-pass">
+        </div>
+      </div>
+
+      <button class="button">Sign up</button>
+    </div>
+
+  </div>
+</form>
